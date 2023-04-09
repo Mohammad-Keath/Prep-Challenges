@@ -286,7 +286,15 @@ let data = {
 //  2- You need to round the average to the nearest lower number 
 
 const classesAvg = (data) => {
-    // write your code here
+    for (let i = 0 ; i<data.grades.length;i++){
+        for (let a=0;a<data.grades[i].classes.length;a++){
+            for (let b=0;b<data.grades[i].classes[a].classScores.length;b++){
+                data.grades[i].classes[a].avg += data.grades[i].classes[a].classScores[b]
+            }
+            data.grades[i].classes[a].avg = Math.floor(data.grades[i].classes[a].avg/ data.grades[i].classes[a].classScores.length)
+        }
+    }
+    return data
 };
 // -------------------------------------------------------------------------------------------------------
 
