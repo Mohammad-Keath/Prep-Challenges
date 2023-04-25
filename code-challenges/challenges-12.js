@@ -71,7 +71,14 @@ const oddFiltration = (arr) => {
 //  2- If one of the names is null dont add it to the full name
 
 const cvsFiltration = (arr) => {
-    // write your code here
+    let arr1 = arr.filter(x =>x.firstName !== null && x.LastName !== null && x.yearsOfExperience > 4)
+    let arr2 =[]
+    for (let i=0 ;i<arr1.length;i++){
+        let fName
+        fName = arr1[i].firstName + " " + arr1[i].LastName
+        arr2.push({fullName:fName,tech:arr1[i].tech})
+    }
+    return arr2
 }
 // -------------------------------------------------------------------------------------------------------
 
