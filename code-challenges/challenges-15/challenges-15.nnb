@@ -1,0 +1,67 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "## Hacker Rank\n\nFor Thursdays you will be solving some selected challenges on HackerRank, please create an account if you don't have then\nFollow the links below:\nread them carefully and solve them then copy-paste your solution below in Code Block"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Required**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Equality In An Array](https://www.hackerrank.com/challenges/equality-in-a-array/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function equalizeArray(arr) {\n    let num = 0\n    let arr1 =[]\n    for (let i=0;i<arr.length;i++){\n        let count = 0\n        for(let b=0;b<arr.length;b++){\n           if (arr[i]==arr[b]){\n               count ++\n           }\n            \n        }\n        arr1.push(count)\n        }\n        let biggest =0\n        let itemorder =0\n        for (let i=0;i<arr1.length;i++){\n           if (arr1[i]>biggest){\n               biggest = arr1[i]\n               itemorder = i\n           }\n        }\n        for (let i=0;i<arr.length;i++){\n        if (arr[i]!==arr[itemorder]){\n            num ++\n        }\n        }\n    \nreturn num\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Optional**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Halloween Sale](https://www.hackerrank.com/challenges/halloween-sale/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Sherlock And Squares](https://www.hackerrank.com/challenges/sherlock-and-squares/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        }
+    ]
+}
